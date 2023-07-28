@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    display: flex;
+}
+
+.memory-game {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 930px;
+    height: 300px;
+    background-color: #E2AB60;
+    padding: 2px;
+}
+
+.tarot-card {
+    position: relative;
+    margin: 2px;
+    width: 80px;
+    height: 140px;
+}
+
+.front-card,
+.back-card {
+    width: 80px;
+    height: 140px;
+    position: absolute;
+    border-radius: 5px;
+    background-color: #E2AB60;
+}
+
