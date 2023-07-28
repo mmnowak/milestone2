@@ -1,16 +1,15 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
+body {
+    background-color: #1D0742;
+    height: auto;
+}
 
 nav {
-    background-color: #E2AB60;
+    background-color: #F2E088;
     height: 50px;
 }
 
 .memory-game {
-    background-color: #E2AB60;
+    background-color: #F2E088;
 }
 
 .tarot-card {
@@ -18,6 +17,8 @@ nav {
     margin: 2px;
     width: 80px;
     height: 140px;
+    transform: scale(1);
+    transform-style: preserve-3d;
 }
 
 .front-card,
@@ -26,13 +27,21 @@ nav {
     height: 140px;
     position: absolute;
     border-radius: 5px;
-    background-color: #E2AB60;
-    transform: scale(1);
+    backface-visibility: hidden;
 }
 
-/* Transformation on click - will be changed to a js function later */
+footer {
+    height: 30px;
+    background-color: #F2E088;
+}
 
-.tarot-card:active {
-    transform: scale(0.97);
-    transition: transform .2s;
+@media only screen and (min-width: 1199) { 
+    footer {
+        position: sticky !important;
+        margin-bottom: 0 !important;
+    }
+}
+
+.tarot-card.flip {
+    transform: rotateY(180deg);
   }
