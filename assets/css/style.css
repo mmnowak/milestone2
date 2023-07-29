@@ -21,6 +21,14 @@ nav {
     transform-style: preserve-3d;
 }
 
+.tarot-card:hover {
+    transform: scale(1.05)
+}
+
+.tarot-card.flipped {
+    transform: rotateY(180deg);
+}
+
 .front-card,
 .back-card {
     width: 80px;
@@ -28,6 +36,10 @@ nav {
     position: absolute;
     border-radius: 5px;
     backface-visibility: hidden;
+}
+
+.front-card {
+        transform: rotateY(180deg);
 }
 
 footer {
